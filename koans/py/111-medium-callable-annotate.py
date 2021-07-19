@@ -5,7 +5,10 @@ Koan to learn annotating the callables or functions.
 # Annotate the function arguments
 # Documentation: https://docs.python.org/3/library/typing.html?highlight=typing#callable
 # Documentation: https://docs.python.org/3/library/typing.html?highlight=typing#typing.Iterable
-def user_sort(data, func):
+from typing import Callable, Iterable
+
+
+def user_sort(data: Iterable, func: Callable):
     return sorted(data, key=func)
 
 
